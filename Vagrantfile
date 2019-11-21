@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
   script = "https://raw.githubusercontent.com/JosephEnd/init-script-django-dev-vagrant/master/bootstrap-django.sh"
   appDirectory = "appTest"
   appToken = "60a32935faa4f625127cfde2f5bcdcd938ed4372"
-  appGitRepo = "/JosephEnd/init-script-django-dev-vagrant
+  appGitRepo = "/JosephEnd/init-script-django-dev-vagrant"
 
 
 
