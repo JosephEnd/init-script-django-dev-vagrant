@@ -1,5 +1,6 @@
 #!/bin/bash
 
+app =
 # Update and upgrade the server packages.
 sudo apt-get update -y
 sudo apt-get upgrade -y
@@ -15,8 +16,7 @@ pip install --upgrade pip
 # CD naar root directory and cd in vagrant directory, geef optie om directory naam op te geven
 cd / && cd vagrant && mkdir appName && cd appName
 # git init && git pull geef optie om git pull adress en token in te voeren
-git init
-git pull https://b51065507e589ce2b3dea8966f33293f5737c0b2@github.com/JosephEnd/Django-Heroku-starter.git
+git init && git clone https://github.com/JosephEnd/starter-test
 #install pyenv
 curl https://pyenv.run | bash
 # run pyenv
