@@ -20,7 +20,7 @@ source /home/vagrant/.profile
 SCRIPT
 
 $bootstrap = <<SCRIPT
-curl -sSL #{bootstrap_url} | bash - s
+curl #{bootstrap_url} | bash
 SCRIPT
 
 Vagrant.configure("2") do |config|
