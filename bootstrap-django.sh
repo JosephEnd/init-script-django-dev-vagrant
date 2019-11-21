@@ -15,7 +15,7 @@ pip install --upgrade pip
 # CD naar root directory and cd in vagrant directory, geef optie om directory naam op te geven
 cd / && cd vagrant && mkdir $appDirectory && cd $appDirectory
 # git init && git pull geef optie om git pull adress en token in te voeren
-git init && git pull https://$appToken@github.com/$appGitRepo
+git init && git pull https://$appToken@github.com$appGitRepo
 #install pyenv
 curl https://pyenv.run | bash
 # run pyenv
