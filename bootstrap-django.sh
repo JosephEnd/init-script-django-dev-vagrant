@@ -13,9 +13,9 @@ xz-utils tk-dev libffi-dev liblzma-dev python-openssl gcc g++ git python3-pip -y
 pip3 install --upgrade pip
 pip install --upgrade pip
 # CD naar root directory and cd in vagrant directory, geef optie om directory naam op te geven
-cd / && cd vagrant && mkdir $appDirectory && cd $appDirectory
+cd / && cd vagrant && mkdir appName && cd appName
 # git init && git pull geef optie om git pull adress en token in te voeren
-git init && git pull https://$appToken@github.com$appGitRepo
+git init && git pull https://5bb7611785be0397359b8de3562fedd381421ea3@github.com/JosephEnd/Django-Heroku-starter
 #install pyenv
 curl https://pyenv.run | bash
 # run pyenv
