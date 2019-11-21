@@ -13,7 +13,6 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-<<<<<<< HEAD
   #
   # vagrant box defined variables
   os_version = "ubuntu/xenial64"
@@ -21,7 +20,9 @@ Vagrant.configure("2") do |config|
   vm_ip = "172.28.128.4"
   #
   # Dev environment defined variables
-
+  appDirectory =
+  appToken =
+  appGitRepo = 
 
   script = "https://raw.githubusercontent.com/JosephEnd/init-script-django-dev-vagrant/master/bootstrap-django.sh"
 
@@ -34,24 +35,12 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", priviliged: false, inline: <<-SHELL
   $test_echo
-=======
-  config.vm.box = "ubuntu/xenial64"
-
-  config.vm.network "private_network", ip: "172.28.128.4"
-
-  config.vm.provision "shell", inline: <<-SHELL
->>>>>>> 428f2032e5aa27a747b0d6c34c7c3b707213ac43
   echo 'export PATH="/home/vagrant/.pyenv/bin:$PATH"' >> /home/vagrant/.bashrc
   echo 'eval "$(pyenv init -)"' >> /home/vagrant/.bashrc
   echo 'eval "$(pyenv virtualenv-init -)"' >> /home/vagrant/.bashrc
   source /home/vagrant/.profile
-<<<<<<< HEAD
   $test_echo2
   curl -sSL $script | bash - s
-=======
-
-  curl 
->>>>>>> 428f2032e5aa27a747b0d6c34c7c3b707213ac43
   SHELL
 
 end
