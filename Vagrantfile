@@ -20,11 +20,12 @@ Vagrant.configure("2") do |config|
   vm_ip = "172.28.128.4"
   #
   # Dev environment defined variables
+  script = "https://raw.githubusercontent.com/JosephEnd/init-script-django-dev-vagrant/master/bootstrap-django.sh"
   appDirectory =
   appToken =
-  appGitRepo = 
+  appGitRepo =
 
-  script = "https://raw.githubusercontent.com/JosephEnd/init-script-django-dev-vagrant/master/bootstrap-django.sh"
+
 
   test_echo = "echo 'environment variables inline'"
   test_echo2 = "echo 'environment variables inline'"
