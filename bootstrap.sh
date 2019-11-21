@@ -16,13 +16,6 @@ pip install --upgrade pip
 cd / && cd vagrant && mkdir $appDirectory && cd $appDirectory
 # git init && git pull geef optie om git pull adress en token in te voeren
 git init && git pull https://$appToken@github.com/$appGitRepo
-#add pyenv bashrc lines
-echo 'export PATH="/home/vagrant/.pyenv/bin:$PATH"' >> /home/vagrant/.bashrc
-echo 'export PATH="/home/vagrant/.pyenv/bin:$PATH"' >> ~/.bashrc:
-echo 'eval "$(pyenv init -)"' >> /home/vagrant/.bashrc
-echo 'eval "$(pyenv init -)"' >> ~/.bashrc:
-echo 'eval "$(pyenv virtualenv-init -)"' >> /home/vagrant/.bashrc
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc:
 #install pyenv
 curl https://pyenv.run | bash
 # run pyenv
