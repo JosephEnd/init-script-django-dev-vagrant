@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   vm_net_type= "private_network"
   vm_ip = "172.28.128.4"
   script = "https://raw.githubusercontent.com/JosephEnd/init-script-django-dev-vagrant/master/bootstrap-django.sh"
-
+ 
   test_echo = "echo 'environment variables inline'"
   test_echo2 = "echo 'environment variables inline'"
 
