@@ -16,7 +16,7 @@ pip install --upgrade pip
 cd / && cd vagrant && mkdir appName && cd appName
 # git init && git pull geef optie om git pull adress en token in te voeren
 git init
-git pull https://5bb7611785be0397359b8de3562fedd381421ea3@github.com/JosephEnd/Django-Heroku-starter.git
+git pull https://7da08f8cc09c7a2d4497f6598fa3b3863e48faff@github.com/JosephEnd/Django-Heroku-starter.git
 #install pyenv
 curl https://pyenv.run | bash
 # run pyenv
