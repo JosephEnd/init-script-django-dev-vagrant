@@ -1,6 +1,5 @@
 #!/bin/bash
 
-app =
 # Update and upgrade the server packages.
 sudo apt-get update -y
 sudo apt-get upgrade -y
