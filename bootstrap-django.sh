@@ -13,9 +13,11 @@ xz-utils tk-dev libffi-dev liblzma-dev python-openssl gcc g++ git python3-pip -y
 python pip3 install --upgrade pip
 python3 pip3 install --upgrade pip
 # CD naar root directory and cd in vagrant directory, geef optie om directory naam op te geven
-cd / && cd vagrant && mkdir appName && cd appName
+cd / && cd vagrant
 # git init && git pull geef optie om git pull adress en token in te voeren
 git init && git clone https://github.com/JosephEnd/starter-test
+# cd into
+cd starter-test
 #install pyenv
 curl https://pyenv.run | bash
 # run pyenv
